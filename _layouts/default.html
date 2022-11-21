@@ -11,13 +11,7 @@
   </head>
   
   <body>
-    <h1 onclick="titleClicked()" id="titleText">{{ page.title }}</h1>
-    <script type="text/javascript">
-    function titleClicked() {
-      document.getElementById("titleText").innerHTML += "!";
-      document.body.style.backgroundColor = randomColor();
-    }
-    </script>
+    <h1 id="titleText">{{ page.title }}</h1>
     
     <div class="linksection">
           <a href="http://chroma.zone/" class="blocklink"><span class="linkbutton">Home</span></a>
