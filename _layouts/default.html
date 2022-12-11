@@ -19,7 +19,7 @@
         <div class="floating-button-left" id="close-nav-button">
           <img src="/assets/close-nav.svg" />
         </div>
-        <iframe title="Navigation" src="/navigation.html#{{site.baseurl | remove_first: "/" | split: "/" | first}}"></iframe>
+        <iframe title="Navigation" src="/navigation.html#{{site.baseurl | concat: page.url | remove_first: "/" | split: "/" | first}}"></iframe>
       </div>
       <div class="content-box" id="content-box">
         <div class="floating-button-left" id="expand-nav-button">
