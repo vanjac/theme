@@ -13,21 +13,21 @@
   <body>
     <div class="page-root">
       <div class="nav-box" id="navigation">
-        <div class="floating-button-left" id="collapse-nav-button">
+        <button class="floating-button-left" id="collapse-nav-button">
           <img src="/assets/collapse-nav.png" width="32" height="32">
-        </div>
-        <div class="floating-button-left" id="close-nav-button">
+        </button>
+        <button class="floating-button-left" id="close-nav-button">
           <img src="/assets/close-nav.png" width="32" height="32">
-        </div>
+        </button>
         <iframe title="Navigation" frameBorder="0" src="/navigation.html#{{site.baseurl | append: page.url | remove_first: "/" | split: "/" | first}}"></iframe>
       </div>
       <div class="content-box" id="content-box">
-        <div class="floating-button-left" id="expand-nav-button">
+        <button class="floating-button-left" id="expand-nav-button">
           <img src="/assets/open-nav.png" width="32" height="32">
-        </div>
-        <div class="floating-button-left" id="open-nav-button">
+        </button>
+        <button class="floating-button-left" id="open-nav-button">
           <img src="/assets/open-nav.png" width="32" height="32">
-        </div>
+        </button>
 
         <div class="content" role="main">
           <div class="content-header">
