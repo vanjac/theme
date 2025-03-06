@@ -30,11 +30,11 @@
         </button>
 
         <div class="content" role="main">
-          <div class="content-header">
+          {% if page.links %}<div class="content-header" role="navigation">
             {% for link in page.links %}
-              <a class="quick-link" href="{{link.url}}">{{link.title}}</a>
+              <a href="{{link.url}}">{{link.title}}</a>
             {% endfor %}
-          </div>
+          </div>{% endif %}
 
 {{ content }}
 
