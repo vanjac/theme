@@ -20,7 +20,7 @@
           <img alt="" src="/assets/close-nav.png" width="32" height="32">
         </button>
         <iframe title="Navigation" frameBorder="0"
-                src="{{page.navigation | default: "/navigation.html"}}#{{site.baseurl | append: page.url | remove_first: "/" | split: "/" | first}}">
+                src="{{page.navigation | default: "/navigation.html"}}#{{site.baseurl | append: page.url | replace: "/", " " | rstrip | remove: ".html" | split: " " | last}}">
         </iframe>
       </div>
       <div class="content-box" id="content-box">
