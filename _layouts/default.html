@@ -19,7 +19,9 @@
         <button title="Close Navigation" class="floating-button-left" id="close-nav-button">
           <img alt="" src="/assets/close-nav.png" width="32" height="32">
         </button>
-        <iframe title="Navigation" frameBorder="0" src="/navigation.html#{{site.baseurl | append: page.url | remove_first: "/" | split: "/" | first}}"></iframe>
+        <iframe title="Navigation" frameBorder="0"
+                src="{{page.navigation | default: "/navigation.html"}}#{{site.baseurl | append: page.url | remove_first: "/" | split: "/" | first}}">
+        </iframe>
       </div>
       <div class="content-box" id="content-box">
         <button title="Open Navigation" class="floating-button-left" id="expand-nav-button">
